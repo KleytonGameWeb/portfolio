@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+h1 {
+  background: darkblue;
+  color: white;
+  font: bold 29px serif;
+  padding: 40px;
+  text-align: center;
+  text-shadow: 1px 1px 5px black;
+}
