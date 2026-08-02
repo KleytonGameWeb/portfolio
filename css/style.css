@@ -6,11 +6,45 @@
   box-sizing: border-box;
 }
 
-h1 {
-  background: darkblue;
-  color: white;
-  font: bold 29px serif;
-  padding: 40px;
-  text-align: center;
-  text-shadow: 1px 1px 5px black;
+:root {
+  --fundo: #FFFFFFFF;
+  --fundo-principal: #E9E9E9FF;
+  --destaque: #124BE7FF;
+  --destaque-inverso: #3E98FFFF;
+  --texto: #000000FF;
+  --texto-inverso: #ffffff;
+  --importante: #FCED00FF;
+}
+
+body {
+  font: normal 2em Arial, Helvetica, sans-serif;
+}
+
+/* ------------------------------------------------ CABEÇALHO DA PÁGINA ---*/
+
+header {
+  background-color: var(--destaque);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font: bold 1.5rem serif;
+  color: var(--importante);
+  text-shadow: 1px 1px 5px #00000070;
+}
+
+header a {
+  color: var(--texto-inverso);
+  font-size: 1.5rem;
+  padding: 5px;
+  border-radius: 10px;
+  transition: background 0.6s, color 0.6s;
+}
+
+header a:hover {
+  background-color: var(--destaque-inverso);
+  color: var(--texto);
 }
